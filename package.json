@@ -1,0 +1,19 @@
+{
+  "name": "lesson8chat",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/burlakilia/lesson8chat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/burlakilia/lesson8chat/issues"
+  },
+  "homepage": "https://github.com/burlakilia/lesson8chat#readme"
+}
