@@ -20,6 +20,9 @@ class MessageForm {
         },
         body: JSON.stringify(data)
       }).then(res => {
+        /**
+         * Добавить очистку формы после успешной отправки 
+         */
         console.log('its ok');
       }).catch(err => {
         alert('not ok');

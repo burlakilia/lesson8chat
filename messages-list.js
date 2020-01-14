@@ -3,10 +3,18 @@ class MessagesList {
   constructor(el) {
     this.el = el;
 
+    /**
+     * Сделать автоматическое обновление ленты, через интервал
+     * (см про setTimeout и setInterval)
+     */
+
+     this.refresh();
+  }
+
+  refresh() {
     fetch('https://lesson15test.herokuapp.com/posts')
       .then(res => res.json())
       .then(data => this.render(data));
-
   }
 
   render(data) {
