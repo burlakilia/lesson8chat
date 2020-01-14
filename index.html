@@ -1,14 +1,21 @@
 <html>
   <head>
-    <script src="./index.js"></script>
+    <script src="./messages-list.js"></script>
+    <script src="./message-form.js"></script>
   </head>
   <h1>Чат</h1>
-  <ul>
-    <li>
-      <h3>Тема твита</h3>
-      <p>
-        Привет мир, я твит, пока что статичный и не красивый =(
-      </p>
-    </li>
+  <ul class="messages-list">
   </ul>
+  <form action="google.com" method="POST" class="message-form">
+    <input name="subject" type="text" required="required"/><br/>
+    <textarea name="text" required="required"></textarea><br/>
+    <button type="submit">Отправить</button>
+  </form>
+  <script>
+    'use strict';
+
+    const list = new MessagesList(document.querySelector('.messages-list'));
+    const form = new MessageForm(document.querySelector('.message-form'))
+
+  </script>
 </html>
